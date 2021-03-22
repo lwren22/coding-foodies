@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Second Page </title>
+        <title>Coding Foodies</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
         <meta name="viewport" content="width=device-width, intial-scale=1.0">
@@ -10,54 +10,83 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-      <header>
-        <div id="top">
-            <span class="navBarToggle" id="jsNavBarToggle">
-                <i class="fa fa-bars"></i>
-            </span>
-            <h1 id="title"><a href="#"><img id="logo" src="/Users/alison/CFG/Practice/js-basics/codingFoodies.png" alt="title"/></a></h1>
-        </div>
-        <nav class="navBar" id="jsMenu">
-            <ul >
-                <li class="first"> <a href="https://www.youtube.com/watch?v=QF9BSLioqDI"> Pakistani </a></li>
-                <li><a href= "https://www.youtube.com/watch?v=WYh2Ju4MfYE">  Chinese </a></li>
-                <li><a href="https://www.youtube.com/watch?v=NKtR3KpS83w"> Italian </a></li>
-                <li class="last"> <a href="https://www.youtube.com/watch?v=3ebVs3XJuAY">Turkish </a></li>
-                <li>
-                    <form class="search" action="action_page.php">
-                        <input type="text" placeholder="Search.." name="search">
-                        <button type="submit"><i class="fa fa-search"></i></button>
-                      </form>
-                </li>
-            </ul>
-       </nav>
-       <div id="gap">
-           <p>_</p>
-       </div> 
-       <div id="top">
-        <span class="navBarToggle" id="jsNavBarToggle">
-            <i class="fa fa-bars"></i>
-        </span>
-    </div>
-    
-   </div> 
-    </header>
-
-        <main>    
-                  <div class="container-supermarket"> 
-                  <h2> Shop at the authentic supermarkets </h2>
-                  <ul class="supermarkets">
-                
-                      <li>  <button onclick="window.location.href='https://www.hingyipshop.co.uk/category-101.html'"> Chinese Supermarket </button>    </li>
-                      <li>  <button onclick="window.location.href='https://www.appna.co.uk/collections/pakistani'">   Pakistani Supermarket </button>  </li>
-                      <li>  <button onclick="window.location.href='https://www.delicatezza.co.uk/'"> Italian Supermarket </button>    </li>
-                      <li>  <button onclick="window.location.href='https://marketurk.co.uk/'"> Turkish Supermarket     </button>      </li>
-                  
-                  </ul>
+        <header>
+            <div id="top">
+                <span class="navBarToggle" id="jsNavBarToggle">
+                    <i class="fa fa-bars"></i>
+                </span>
+                <h1 id="title"><a href="index.html"><img id="logo" src="pics/codingFoodies.png" alt="Coding Foodies"/></a></h1>
+            </div>
+            <nav class="navBar" id="jsMenu">
+                <ul >
+                    <li class="first"><a href="secondPage.html">Second Page</a></li>
+                    <li><a href="#bio">About us</a></li>
+                    <li><a href="#">Cuisines</a></li>
+                    <li class="last"><a href="#">Near You</a></li>
+                    <li>
+                        <form class="search" action="action_page.php">
+                            <input type="text" placeholder="Search.." name="search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                          </form>
+                    </li>
+                </ul>
+           </nav>
+           <div id="gap">
+               <p>_</p>
+           </div> 
+        </header>
+        <main>
+            <div id="carouselExampleIndicators" class="carousel slide carousel-fade rotatingFood" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="pics/cupcakes.png" class="d-block w-100" alt="Cupcakes">
                   </div>
+                  <div class="carousel-item">
+                    <img src="pics/goulash.png" class="d-block w-100" alt="Goulash">
                   </div>
-                </main>
-                <footer></footer>
-                
-                </body>
-                </html>
+                  <div class="carousel-item">
+                    <img src="pics/eclair.png" class="d-block w-100" alt="Eclairs">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="pics/pizza.png" class="d-block w-100" alt="Pizza">
+                  </div>
+                </div>
+                <button class="carousel-control-prev leftBtn" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next rightBtn type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            <div id="bio">
+                <p>We are 4 food lovers practicing our coding skils whilst showcasing some of our favourite foods.</p>
+            </div>
+            <div id="usPics">
+                    <img class="ourPics" src="pics/jasmin.jpg" alt="Jasmin"/>
+                    <img class="ourPics" src="pics/lizzie.jpg" alt="Lizzie wrapped up warmly"/>
+                    <img class="ourPics" src="pics/molly.jpg" alt="Molly in front of a cherry blossom tree"/>
+                    <img class="ourPics" src="pics/Alison.png" alt="Alison in front of a glowing sign"/>
+            </div>
+            <div id="phonePics">
+                <div id="firstHalf">
+                    <img class="firstPics" src="pics/jasmin.jpg" alt="Jasmin"/>
+                    <img class="firstPics" src="pics/lizzie.jpg" alt="Lizzie wrapped up warmly"/>
+                </div>
+                <div id="secondHalf">
+                    <img class="secondPics" src="pics/molly.jpg" alt="Molly in front of a cherry blossom tree"/>
+                    <img class="secondPics" src="pics/Alison.png" alt="Alison in front of a glowing sign"/>
+                </div>
+            </div>
+        </main>      
+        <script src="app.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    </body>
+</html>
