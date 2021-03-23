@@ -126,7 +126,7 @@ body {
     width: 40%;
     height: 300px;
     border-radius: 8px;
-    background: url(./images/italian-tiramisu.jpg) no-repeat center / cover;
+    background: url(pics/italian-tiramisu.jpg) no-repeat center / cover;
     position: relative;
     top: -18px;
 }
@@ -135,7 +135,7 @@ body {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: url(./images/italy-flag.png) no-repeat center / cover;
+    background: url(pics/italy-flag.png) no-repeat center / cover;
     position: absolute;
     left: 165px;
     top: 800px;
