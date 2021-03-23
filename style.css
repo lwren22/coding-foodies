@@ -142,6 +142,9 @@ body {
     z-index: 5;
 }
 
+.content:hover{
+    cursor: pointer;
+}
 
 /* The Close Button */
 .close {
