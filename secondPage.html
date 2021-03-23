@@ -1,63 +1,86 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Second Page </title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css">
-        <meta name="viewport" content="width=device-width, intial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
-    <body>
-      <header>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuisines</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
         <div id="top">
             <span class="navBarToggle" id="jsNavBarToggle">
                 <i class="fa fa-bars"></i>
             </span>
-            <h1 id="title"><a href="index.html"><img id="logo" src="pics/codingFoodies.png" alt="title"/></a></h1>
+            <h1 id="title"><a href="index.html"><img id="logo" src="pics/codingFoodies.png" alt="Coding Foodies"/></a></h1>
         </div>
-        <nav class="navBar" id="jsMenu">
-            <ul >
-                <li class="first"> <a href="https://www.youtube.com/watch?v=QF9BSLioqDI"> Pakistani </a></li>
-                <li><a href= "https://www.youtube.com/watch?v=WYh2Ju4MfYE">  Chinese </a></li>
-                <li><a href="https://www.youtube.com/watch?v=NKtR3KpS83w"> Italian </a></li>
-                <li class="last"> <a href="https://www.youtube.com/watch?v=3ebVs3XJuAY">Turkish </a></li>
-                <li>
-                    <form class="search" action="action_page.php">
-                        <input type="text" placeholder="Search.." name="search">
-                        <button type="submit"><i class="fa fa-search"></i></button>
-                      </form>
-                </li>
-            </ul>
-       </nav>
-       <div id="gap">
-           <p>_</p>
-       </div> 
-       <div id="top">
-        <span class="navBarToggle" id="jsNavBarToggle">
-            <i class="fa fa-bars"></i>
-        </span>
-    </div>
-    
-   </div> 
+            <nav class="navBar" id="jsMenu">
+                <ul >
+                    <li class="first"> <a href="https://www.youtube.com/watch?v=QF9BSLioqDI"> Pakistani </a></li>
+                    <li><a href= "https://www.youtube.com/watch?v=WYh2Ju4MfYE">  Chinese </a></li>
+                    <li><a href="https://www.youtube.com/watch?v=NKtR3KpS83w"> Italian </a></li>
+                    <li class="last"> <a href="https://www.youtube.com/watch?v=3ebVs3XJuAY">Turkish </a></li>
+                    <li>
+                        <form class="search" action="action_page.php">
+                            <input type="text" placeholder="Search.." name="search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </li>
+                </ul>
+            </nav>
+            <div id="gap">
+                <p>_</p>
+            </div> 
+            <div id="top">
+                <span class="navBarToggle" id="jsNavBarToggle">
+                    <i class="fa fa-bars"></i>
+                </span>
+            </div>
+        </div> 
     </header>
+    <main>    
+        <div class="container-supermarket"> 
+            <h2> Shop at the authentic supermarkets </h2>
+            <ul class="supermarkets">
+                <li>  <button onclick="window.location.href='https://www.hingyipshop.co.uk/category-101.html'"> Chinese Supermarket </button>    </li>
+                <li>  <button onclick="window.location.href='https://www.appna.co.uk/collections/pakistani'">   Pakistani Supermarket </button>  </li>
+                <li>  <button onclick="window.location.href='https://www.delicatezza.co.uk/'"> Italian Supermarket </button>    </li>
+                <li>  <button onclick="window.location.href='https://marketurk.co.uk/'"> Turkish Supermarket     </button>      </li>
+            </ul>
+        </div>
+        </div>
+        </main>
+        <div class="recipes">
+<div class="subFav"><h3>Subscriber's Favourite</h3></div>
+    <section>
+                <div class="container">
+                    <div class="left">
+                        <div class="content" id="left">
+                            <h4>Tiramisu</h4>
+                            <p>The 'pick me up' of all cakes. The sponge fingers soaked in coffee, layered around and smeared with a creamy mascarpone mixture is a great way to end your meal.</p>
+                            <p>Click to view recipe!</p>
+                        </div>
+                        
+                    </div> 
+                    <div class="right"></div>
+                    <div class="italy-flag"></div>
+                </div>
+            </div>
+            <div id="modalBox" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p id="watching">Text</p>
+                </div>
+          </div>
 
-        <main>    
-                  <div class="container-supermarket"> 
-                  <h2> Shop at the authentic supermarkets </h2>
-                  <ul class="supermarkets">
-                
-                      <li>  <button onclick="window.location.href='https://www.hingyipshop.co.uk/category-101.html'"> Chinese Supermarket </button>    </li>
-                      <li>  <button onclick="window.location.href='https://www.appna.co.uk/collections/pakistani'">   Pakistani Supermarket </button>  </li>
-                      <li>  <button onclick="window.location.href='https://www.delicatezza.co.uk/'"> Italian Supermarket </button>    </li>
-                      <li>  <button onclick="window.location.href='https://marketurk.co.uk/'"> Turkish Supermarket     </button>      </li>
-                  
-                  </ul>
-                  </div>
-                  </div>
-                </main>
-                <footer></footer>
-                
-                </body>
-                </html>
+    </section>
+</div>
+    <footer></footer>
+</body>
+</html>
