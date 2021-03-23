@@ -65,6 +65,205 @@ body {
     display: flex;
     justify-content: space-evenly;
 }
+.cuisines{
+    /* background-color: #d4dfff; */
+    border-radius: 25px;
+    background-size: 50%;
+    color: white;
+    font-weight: bold;
+    font-family: 'Shippori Mincho B1', serif;
+    text-align:center;
+    vertical-align: middle;
+    text-shadow: 2px 2px 5px black;
+}
+
+h4{
+    font-family: "Shippori Mincho B1", serif;
+    color:#f1b6ed;
+    text-decoration: none;
+}
+
+p1{
+    color:d4dfff;
+    font-weight:bold;
+    font-family: "Shippori Mincho B1", serif;
+}
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-bottom: 20px;
+}
+
+.flex-social{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Shippori Mincho B1', serif;
+}
+
+.flex-middle{
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.box1{
+    background-image: url("pics/kahvalti.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    border: 2px solid black;
+    width: 25%;
+    height: 150px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    text-align: center;
+    border-radius: 25px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.box1:hover{opacity: 0.9;}
+
+.box2{
+    background-image: url("pics/Italian-food.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid black;
+    width: 25%;
+    height: 150px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    text-align: center;
+    border-radius: 25px;
+    vertical-align: middle;
+}
+
+.box2:hover{opacity: 0.9;}
+
+.box3{
+    background-image: url("pics/chinese-food.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid black;
+    width: 25%;
+    height: 150px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    text-align: center;
+    border-radius:25px;
+    vertical-align: middle;
+}
+
+.box3:hover{opacity: 0.9;}
+
+.box4{
+    background-image: url("pics/pakistani-food.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid black;
+    width: 25%;
+    height: 150px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    text-align:center;
+    border-radius: 25px;
+    vertical-align: middle;
+}
+
+.box4:hover{opacity: 0.9;}
+
+.instagramBox{
+    border: 2px solid #b5c7fb;
+    color: black;
+    height: 400px;
+    width: 650px;
+    background-image: url("pics/instagram.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin-left: 10px;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    text-decoration: none;
+    }
+   
+#map{
+    border-radius: 25px;
+    margin-right: 10px;
+}
+
+#newsletter{
+    text-align: center;
+}
+
+.btnPrimary{
+    width:900px;
+    height: 40px;
+    background-color: #d1adf1;
+    border: 2px solid black;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    font-family: 'Shippori Mincho B1', serif;
+    border-radius:25px;
+    text-decoration: underline;
+    transition-duration: 0.4s;
+    }   
+    
+.btnPrimary:hover {
+        background-color: #e4c5ff;
+        color: white;
+      }
+
+
+.twitter{
+   height: 100px;
+   width: 100px;
+   border-radius: 50%;
+   display: inline-block; 
+   margin-top:10px;
+}
+
+.twitter:hover{opacity: 0.6}
+
+
+.facebook{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: inline-block; 
+    margin-top:10px;
+ }
+
+.facebook:hover{opacity: 0.6}
+
+.instagram{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: inline-block; 
+    margin-top:10px;
+ }
+
+.instagram:hover{opacity: 0.6}
+
+footer{
+    background-color: #f1b6ed;
+    border: 1px solid white;
+    padding-bottom: 10px;
+ }
+
 /* PHONE VERSION */
 @media only screen and
 
@@ -166,7 +365,7 @@ body {
       }
     #bio{
         padding-top: 40px;
-        padding-bottom: 30px;
+        padding-bottom: 20px;
         padding-right: 30px;
         padding-left: 30px;
     } 
@@ -315,7 +514,7 @@ body {
       }
     #bio{
         padding-top: 40px;
-        padding-bottom: 50px;
+        padding-bottom: 20px;
     }
     .ourPics {
         max-height: 140px;
@@ -327,7 +526,7 @@ body {
     #usPics{
         margin-left: 50px;
         margin-right: 50px;
-        padding-bottom: 20px;
+        padding-bottom: 30px;
     }
     #phonePics{
         display: none;
@@ -436,7 +635,7 @@ form.search::after {
   }
 #bio{
     padding-top: 40px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 }
 .ourPics {
     max-height: 180px;
@@ -448,7 +647,7 @@ form.search::after {
 #usPics{
     margin-left: 50px;
     margin-right: 50px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
 #phonePics{
     display: none;
